@@ -12,9 +12,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Add Room" component={AddRoom} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="CreateChoreSpace" component={CreateChore} />
-        <Stack.Screen name="Add Room" component={AddRoom} />
       </Stack.Navigator>
     </NavigationContainer>
   );
