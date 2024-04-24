@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "@react-navigation/stack": "^6.3.29"
+    "@react-navigation/stack": "^6.3.29",
+    "expo-cli": "^6.3.10",
+    "expo-font": "~11.1.1"
   }
 }
