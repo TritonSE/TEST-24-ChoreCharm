@@ -1,11 +1,14 @@
+
 import {
   StyleSheet,
   Text,
   View,
   TextInput,
   TouchableOpacity,
+  Button
 } from "react-native";
 import React, { useState } from "react";
+
 
 export const LoginScreen = ({ navigation }) => {
   const [username, setUsername] = useState("");
@@ -48,9 +51,11 @@ export const LoginScreen = ({ navigation }) => {
           multiline={false}
         />
       </View>
-      <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-        <Text style={styles.loginButtonText}>Login</Text>
-      </TouchableOpacity>
+      <Button
+      title="Login"
+      onPress={() => navigation.navigate('CreateChoreSpace', {name: 'CreatChoreSpace'}) }
+      color="#000000"
+      />
       <TouchableOpacity onPress={handleSignUp}>
         <Text style={styles.linkText}>
           Don't have account? <Text style={styles.link}>Sign Up</Text>
@@ -69,7 +74,7 @@ export const LoginScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
     backgroundColor: "#FBF7F3",
   },
