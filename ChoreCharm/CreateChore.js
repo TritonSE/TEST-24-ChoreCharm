@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: 'column',
     padding: 16,
-    gap: 8
+    gap: 8,
 
   },
   txt1: {
