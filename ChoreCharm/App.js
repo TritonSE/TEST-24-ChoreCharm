@@ -5,20 +5,17 @@ import { CreateChore } from "./CreateChore.js";
 import { AddRoom } from "./AddRoom.js";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import React, { useState } from 'react';
+import BotNavBar from "./Components/BotNavBar.js";
+import { Ionicons } from '@expo/vector-icons';
 
 
 const Stack = createStackNavigator();
 
 function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="CreateChoreSpace" component={CreateChore} />
-        <Stack.Screen name="Add Room" component={AddRoom} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+
+  return <BotNavBar />
+  
 }
 
 export default App;
